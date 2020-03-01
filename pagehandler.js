@@ -1,7 +1,7 @@
 //Pagehandler.js//
 
 window.onload = function(){
-	var input = document.getElementById("body1");
+	var input = document.getElementById("text");
 
 	input.onkeydown = function() {
 		var key = event.keyCode || event.charCode;

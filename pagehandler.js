@@ -14,7 +14,7 @@ window.onload = function(){
 		if( key == 8 || key == 46 )
 			amp -= charAt(amp.length-1);
 		amp += res;
-		document.getElementById("type").innerHTML(amp);
+		document.getElementById("type").innerHTML= amp;
 		
 		//var key = e.keyCode || e.charCode;
 

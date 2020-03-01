@@ -29,7 +29,7 @@ window.onload = function(){
 		document.getElementById("type").innerHTML = amp;
 	}
 	
-	window.setInterval(() => {
+	/*window.setInterval(() => {
 		cursorBlip();
 	}, 1000);
 
@@ -41,7 +41,7 @@ window.onload = function(){
 		}
 		document.getElementById("blip").innerHTML = "|";
 		blip = false;
-	}
+	}*/
 }
 /*funtion step() {
 		//FOR ANY ANIMATIONS BESIDES THE CURSOR();

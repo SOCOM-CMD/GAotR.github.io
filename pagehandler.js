@@ -5,7 +5,7 @@ window.onload = function(){
 
 	input.onkeydown = function(e) {
 		var res = String.fromCharCode(e.charCode);
-		if(res $= "")
+		if(res == "")
 			console.log("made it here boioii");
 		
 		//var key = e.keyCode || e.charCode;
@@ -16,3 +16,4 @@ window.onload = function(){
 	};
 
 }
+

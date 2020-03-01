@@ -24,7 +24,7 @@ window.onload = function(){
 		fin += res;
 		amp += "*";
 		console.log(fin);
-		if(console.log(fin == chk)) {
+		if(fin == chk) {
 			screen1 = false;
 			document.getElementById("blip").innerHTML = "";
 			document.getElementById("...").innerHTML = "ACCEPTED";
@@ -70,6 +70,7 @@ function step() {
 
 function initiateStartup()
 {
+	console.log("here");
 	document.getElementById("inputcontainer").style.color = "white";
 	window.requestAnimationFrame(step);
 }

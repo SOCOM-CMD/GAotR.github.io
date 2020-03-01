@@ -8,11 +8,12 @@ window.onload = function(){
 
 	input.onkeydown = function(e) {
 		key = e.charCode;
+		console.log(key);
 		res = String.fromCharCode(e.charCode);
 		if(res == "")
 			console.log("made it here boioii");
 		if( key == 8 || key == 46 )
-			amp -= charAt(amp.length-1);
+			amp -= charAt(amp.length);
 		amp += res;
 		document.getElementById("type").innerHTML= amp;
 		

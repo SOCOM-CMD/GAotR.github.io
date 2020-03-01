@@ -6,10 +6,10 @@ window.onload = function(){
 	var amp = "b";
 	var key = 123;
 
-	input.onkeydown = function(e) {
-		key = e.charCode;
+	input.onkeydown = function() {
+		key = event.charCode;
 		console.log(key);
-		res = String.fromCharCode(e.charCode);
+		res = String.fromCharCode(event.charCode);
 		if(res == "")
 			console.log("made it here boioii");
 		if( key == 8 || key == 46 )

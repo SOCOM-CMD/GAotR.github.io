@@ -4,7 +4,7 @@ window.onload = function(){
 	var input = document.getElementById("text");
 
 	input.onkeydown = function(e) {
-		var res = String.fromCharCode(e.charCode;);
+		var res = String.fromCharCode(e.charCode);
 		if(res.length > 0)
 			console.log("made it here boioii");
 		

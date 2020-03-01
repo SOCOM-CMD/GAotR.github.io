@@ -3,9 +3,9 @@
 window.onload = function(){
 	var input = document.getElementById("text");
 
-	input.onkeypress = function() {
+	input.onkeydown = function() {
 		var ev = event.key;
-		var res = String.fromCharCode.apply(null, ev);
+		var res = String.fromCharCode(ev);
 		console.log(res);
 		var key = event.keyCode || event.charCode;
 

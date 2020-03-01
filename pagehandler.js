@@ -22,6 +22,7 @@ window.onload = function(){
 	};
 	
 	input.onkeyup = function (e) {
+		console.log(e.keyCode);
 		if(e.keyCode == 46)
 			amp -= charAt(amp.length);
 		document.getElementById("type").innerHTML= amp;

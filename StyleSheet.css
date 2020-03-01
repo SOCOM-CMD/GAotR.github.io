@@ -12,4 +12,5 @@ section {
 section.textpass {
 	color: green;
 	font-family: terminal;
+	font-size: 50px;
 }

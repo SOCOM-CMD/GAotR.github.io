@@ -36,9 +36,11 @@ window.onload = function(){
 	function cursorBlip()
 	{
 		if(blip == false) {
+			console.log("beep");
 			document.getElementById("blip").innerHTML = " ";
 			blip = true;
 		}
+		console.log("bloop");
 		document.getElementById("blip").innerHTML = "|";
 		blip = false;
 	}

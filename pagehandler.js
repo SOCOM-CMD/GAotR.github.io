@@ -8,6 +8,7 @@ window.onload = function(){
 
 	input.onkeypress = function() {
 		var charCode = (typeof event.which == "undefined") ? event.keyCode : event.which;
+		console.log(charCode);
 		res = String.fromCharCode(charCode);
 		if(res == "")
 			console.log("made it here boioii");

@@ -1,11 +1,10 @@
 //Pagehandler.js//
 
-const log = document.getElementById('log');
+var input = document.getElementById('myInput');
 
-document.addEventListener('keypress', logKey);
+input.onkeydown = function() {
+    var key = event.keyCode || event.charCode;
 
-function logKey(e) {
-	log.textContent += ` ${e}`;
-	var a = log.textContent.toString();
-	console.log(a);
-}
+    if( key == 8 || key == 46 )
+        return false;
+};

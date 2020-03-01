@@ -6,10 +6,9 @@ window.onload = function(){
 	var amp = "b";
 	var key = 123;
 
-	input.onkeydown = function() {
-		key = event.keyCode;
-		console.log(key);
-		res = String.fromCharCode(event.charCode);
+	input.onkeypress = function() {
+		var charCode = (typeof event.which == "undefined") ? event.keyCode : event.which;
+		res = String.fromCharCode(charCode);
 		if(res == "")
 			console.log("made it here boioii");
 		if( key == 8 || key == 46 )

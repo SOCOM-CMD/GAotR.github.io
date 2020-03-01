@@ -23,7 +23,7 @@ window.onload = function(){
 		res = String.fromCharCode(charCode);
 		fin += res;
 		amp += "*";
-		
+		debug.log(fin);
 		if(fin == chk) {
 			screen1 = false;
 			document.getElementById("blip").innerHTML = "";

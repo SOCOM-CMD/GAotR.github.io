@@ -28,24 +28,23 @@ window.onload = function(){
 			amp = amp.substring(0, amp.length - 1);
 		document.getElementById("type").innerHTML = amp;
 	}
+	
+	window.setInterval(() => {
+		cursorBlip();
+	}, 1000 / 60);
+
+	function cursorBlip()
+	{
+		if(blip == false) {
+			document.getElementByID("blip").innerHTML = " ";
+			blip = true;
+		}
+		document.getElementByID("blip").innerHTML = "|";
+		blip = false;
+	}
 }
 /*funtion step() {
 		//FOR ANY ANIMATIONS BESIDES THE CURSOR();
 		window.requestAnimationFrame(step);
 	}
 window.requestAnimationFrame(step);*/
-
-
-window.setInterval(() => {
-    cursorBlip();
-}, 1000 / 60);
-
-function cursorBlip()
-{
-	if(blip == false) {
-		document.getElementByID("blip").innerHTML = " ";
-		blip = true;
-	}
-	document.getElementByID("blip").innerHTML = "|";
-	blip = false;
-}

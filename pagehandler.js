@@ -7,7 +7,7 @@ window.onload = function(){
 	var key = 123;
 
 	input.onkeydown = function() {
-		key = event.charCode;
+		key = event.keyCode;
 		console.log(key);
 		res = String.fromCharCode(event.charCode);
 		if(res == "")

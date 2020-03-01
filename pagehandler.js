@@ -31,7 +31,7 @@ window.onload = function(){
 	
 	window.setInterval(() => {
 		cursorBlip();
-	}, 1000 / 60);
+	}, 1000);
 
 	function cursorBlip()
 	{

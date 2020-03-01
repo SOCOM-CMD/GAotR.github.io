@@ -12,15 +12,18 @@ window.onload = function(){
 		res = String.fromCharCode(charCode);
 		if(res == "")
 			console.log("made it here boioii");
-		if( charCode == 8 || charCode == 46 )
-			amp -= charAt(amp.length);
 		amp += res;
 		document.getElementById("type").innerHTML= amp;
 		
 		//var key = e.keyCode || e.charCode;
-
+	
 		
 		console.log(res);
 	};
-
+	
+	input.onkeyup = function () {
+		if(e.keyCode == 46)
+			amp -= charAt(amp.length);
+		document.getElementById("type").innerHTML= amp;
+	}
 }

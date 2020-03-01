@@ -1,6 +1,6 @@
 //Pagehandler.js//
 
-var input = document.getElementById('myInput');
+const input = document.getElementById('log');
 
 input.onkeydown = function() {
     var key = event.keyCode || event.charCode;

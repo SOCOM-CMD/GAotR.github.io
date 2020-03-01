@@ -36,10 +36,10 @@ window.onload = function(){
 	function cursorBlip()
 	{
 		if(blip == false) {
-			document.getElementByID("blip").innerHTML = " ";
+			document.getElementById("blip").innerHTML = " ";
 			blip = true;
 		}
-		document.getElementByID("blip").innerHTML = "|";
+		document.getElementById("blip").innerHTML = "|";
 		blip = false;
 	}
 }

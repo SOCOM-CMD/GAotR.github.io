@@ -6,5 +6,6 @@ document.addEventListener('keypress', logKey);
 
 function logKey(e) {
 	log.textContent += ` ${e}`;
-	console.log(log);
+	var a = log.textContent.toString();
+	console.log(a);
 }

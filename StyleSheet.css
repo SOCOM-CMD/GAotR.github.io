@@ -12,6 +12,7 @@
 }
 
 .inputcontainer { /*keep this for lower center*/
+		color: green;
         padding: 1em;
         position: absolute;
         top: 60%;

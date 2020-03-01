@@ -11,7 +11,7 @@ window.onload = function(){
 	var chk = "lagbyte01012";
 	var typing = false;
 	var blip = true;
-	var fin = "*";
+	var fin = "";
 	var screen1 = true;
 
 	input.onkeypress = function() {

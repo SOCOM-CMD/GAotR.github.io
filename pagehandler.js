@@ -11,6 +11,6 @@ window.onload = function(){
 
 		if( key == 8 || key == 46 )
 			return false;
-	};
+	}; ////
 
 }

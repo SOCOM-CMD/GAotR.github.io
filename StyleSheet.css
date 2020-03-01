@@ -11,7 +11,7 @@
         transform: translate(-50%, -50%)
 }
 
-.inputcontainer {
+.inputcontainer { /*keep this for lower center*/
         padding: 1em;
         position: absolute;
         top: 60%;
@@ -19,32 +19,3 @@
         margin-right: -50%;
         transform: translate(-50%, -50%)
 }
-
-/* All for form input*/
-input {
-	border: none;
-	background: transparent;
-	font-family: terminal;
-
-}
-
-input[type=text] {
-	background-color: #000000;
-	color: green;
-	font-size: 90px;
-}
-
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: green;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: green;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: green;
-}
-/***********aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa***********/

@@ -6,11 +6,7 @@ section {
         top: 50%;
         left: 50%;
         margin-right: -50%;
+		font-family: terminal;
+		font-size: 100px;
         transform: translate(-50%, -50%)
-}
-
-section.textpass {
-	color: red;
-	font-family: terminal;
-	font-size: 100px;
 }

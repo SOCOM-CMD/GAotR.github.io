@@ -1,10 +1,5 @@
-div.initialtext {
-	height: 10em;
-	position: relative
-}
-
-div.initialtext h1 {
-	margin: 0;
+section {
+	padding: 1em;
 	position: absolute;
 	top: 50%;
 	left: 50%;

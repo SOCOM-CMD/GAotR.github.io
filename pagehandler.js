@@ -5,7 +5,7 @@ window.onload = function(){
 
 	input.onkeydown = function() {
 		var key = event.keyCode || event.charCode;
-		console.log(key);
+		console.log(event.key);
 
 		if( key == 8 || key == 46 )
 			return false;

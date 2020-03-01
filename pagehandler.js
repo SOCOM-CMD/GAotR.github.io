@@ -24,7 +24,7 @@ window.onload = function(){
 		fin += res;
 		amp += "*";
 		console.log(fin);
-		if(fin == chk) {
+		if(console.log(fin == chk)) {
 			screen1 = false;
 			document.getElementById("blip").innerHTML = "";
 			document.getElementById("...").innerHTML = "ACCEPTED";

@@ -24,7 +24,7 @@ window.onload = function(){
 	input.onkeyup = function (e) {
 		console.log(e.keyCode);
 		if(e.keyCode == 8)
-			amp.substring(0, amp.length - 1);
+			amp = amp.substring(0, amp.length - 1);
 		document.getElementById("type").innerHTML= amp;
 	}
 }

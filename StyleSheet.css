@@ -3,7 +3,7 @@
         border-radius: 1em;
         padding: 1em;
         position: absolute;
-        top: 60%;
+        top: 40%;
         left: 50%;
         margin-right: -50%;
 		font-family: terminal;
@@ -14,7 +14,7 @@
 .inputcontainer {
         padding: 1em;
         position: absolute;
-        top: 40%;
+        top: 60%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)

@@ -31,6 +31,8 @@ input {
 input[type=text] {
 	background-color: #000000;
 	color: green;
+	width: 200px;
+	height: 200px;
 }
 
 

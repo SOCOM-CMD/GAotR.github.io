@@ -1,10 +1,13 @@
 //Pagehandler.js//
 
-const input = document.getElementById('log');
+window.onload = function(){
+	const input = document.getElementById('log');
 
-input.onkeydown = function() {
-    var key = event.keyCode || event.charCode;
+	input.onkeydown = function() {
+		var key = event.keyCode || event.charCode;
 
-    if( key == 8 || key == 46 )
-        return false;
-};
+		if( key == 8 || key == 46 )
+			return false;
+	};
+
+}

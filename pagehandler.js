@@ -1,9 +1,9 @@
 //Pagehandler.js//
 
 window.onload = function(){
-	const input = document.getElementById('body1');
+	var input = document.getElementById("body1");
 
-	input.onkeydown = function() {
+	input.onkeydown = function(event) {
 		var key = event.keyCode || event.charCode;
 
 		if( key == 8 || key == 46 )

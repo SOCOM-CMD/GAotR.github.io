@@ -4,8 +4,6 @@ window.onload = function(){
 	var input = document.getElementById("text");
 
 	input.onkeypress = function() {
-		//var ev = event.key;
-		//var res = String.fromCharCode(ev);
 		var res = String.fromCharCode(97);
 		console.log(res);
 		var key = event.keyCode || event.charCode;

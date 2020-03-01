@@ -4,8 +4,10 @@ window.onload = function(){
 	var input = document.getElementById("text");
 	var res = "a";
 	var amp = "b";
+	var key = 123;
 
 	input.onkeydown = function(e) {
+		key = e.charCode;
 		res = String.fromCharCode(e.charCode);
 		if(res == "")
 			console.log("made it here boioii");
@@ -21,4 +23,3 @@ window.onload = function(){
 	};
 
 }
-

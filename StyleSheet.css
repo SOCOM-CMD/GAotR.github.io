@@ -10,7 +10,7 @@ section {
 }
 
 section.textpass {
-	color: green;
+	color: red;
 	font-family: terminal;
-	font-size: 50px;
+	font-size: 100px;
 }

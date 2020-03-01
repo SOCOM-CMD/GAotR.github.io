@@ -12,18 +12,21 @@
 }
 
 .inputcontainer {
-		border: none;
-		background: transparent;
         padding: 1em;
         position: absolute;
         top: 40%;
         left: 50%;
         margin-right: -50%;
-		font-family: terminal;
         transform: translate(-50%, -50%)
 }
 
 /* All for form input*/
+input {
+	border: none;
+	background: transparent;
+	font-family: terminal;
+}
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: green;

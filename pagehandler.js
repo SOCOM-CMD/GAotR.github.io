@@ -39,6 +39,7 @@ window.onload = function(){
 			console.log("beep");
 			document.getElementById("blip").innerHTML = " ";
 			blip = true;
+			return;
 		}
 		console.log("bloop");
 		document.getElementById("blip").innerHTML = "|";

@@ -1,20 +1,23 @@
 //Pagehandler.js//
-var blip = true;
+
 
 window.onload = function(){
 	var input = document.getElementById("text");
 	var res = "a";
 	var amp = "b";
 	var key = 123;
+	var typing = false;
+	var blip = true;
 
 	input.onkeypress = function() {
+		typing = true;
 		var charCode = (typeof event.which == "undefined") ? event.keyCode : event.which;
 		console.log(charCode);
 		res = String.fromCharCode(charCode);
 		if(res == "")
 			console.log("made it here boioii");
 		amp += res;
-		document.getElementById("type").innerHTML= amp;
+		document.getElementById("blip").innerHTML= amp;
 		
 		//var key = e.keyCode || e.charCode;
 	
@@ -26,7 +29,9 @@ window.onload = function(){
 		console.log(e.keyCode);
 		if(e.keyCode == 8)
 			amp = amp.substring(0, amp.length - 1);
-		document.getElementById("type").innerHTML = amp;
+		document.getElementById("blip").innerHTML = amp;
+		if(amp == "")
+			typing = false;
 	}
 	
 	window.setInterval(() => {
@@ -35,6 +40,8 @@ window.onload = function(){
 
 	function cursorBlip()
 	{
+		if(typing == true)
+			return;
 		if(blip == false) {
 			console.log("beep");
 			document.getElementById("blip").innerHTML = " ";

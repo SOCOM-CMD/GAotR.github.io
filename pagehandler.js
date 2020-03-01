@@ -89,6 +89,7 @@ function warningText()
 			if(temp.length > 2) {
 				temp = "";
 				document.getElementById("...").innerHTML = temp;
+				return;
 			}
 			temp += ".";
 			document.getElementById("...").innerHTML = temp;

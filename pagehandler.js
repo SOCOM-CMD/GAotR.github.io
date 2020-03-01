@@ -11,7 +11,7 @@ window.onload = function(){
 		res = String.fromCharCode(charCode);
 		if(res == "")
 			console.log("made it here boioii");
-		if( key == 8 || key == 46 )
+		if( charCode == 8 || charCode == 46 )
 			amp -= charAt(amp.length);
 		amp += res;
 		document.getElementById("type").innerHTML= amp;

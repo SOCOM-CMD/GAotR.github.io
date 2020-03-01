@@ -25,6 +25,13 @@ input {
 	border: none;
 	background: transparent;
 	font-family: terminal;
+
+}
+
+input[type=text] {
+	background-color: #000000;
+	color: green;
+	height: 100%;
 }
 
 

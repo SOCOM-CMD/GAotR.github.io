@@ -3,7 +3,7 @@
 window.onload = function(){
 	var input = document.getElementById("text");
 
-	input.onkeydown = function() {
+	input.onkeypress = function() {
 		console.log(event.key);
 		var key = event.keyCode || event.charCode;
 

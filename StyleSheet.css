@@ -11,7 +11,7 @@ section {
         transform: translate(-50%, -50%)
 }
 
-section h1 {
+h1 {
 	color: green;
 	font-family: terminal;
 }

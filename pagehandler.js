@@ -77,16 +77,16 @@ window.onload = function(){
 						theset =  "> [CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
 						break;
 					case 1:
-						theset =  "  [CLASSIFIED]<br>> OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>> OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
 						break;
 					case 2:
-						theset =  "  [CLASSIFIED]<br>  OPERATION UNDEK<br>> [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>> [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
 						break;
 					case 3:
-						theset =  "  [CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>> [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>> [CLASSIFIED]<br>  [CLASSIFIED]";
 						break;
 					case 4:
-						theset =  "  [CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>> [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>> [CLASSIFIED]";
 						break;
 					default:
 						break;
@@ -133,10 +133,10 @@ window.onload = function(){
 						theset = "> OPERATION SUMMARY<br>  PERSONNEL FILES<br>  MISSION LOGS";
 						break;
 					case 1:
-						theset = "  OPERATION SUMMARY<br>> PERSONNEL FILES<br>  MISSION LOGS";
+						theset = "&nbsp&nbspOPERATION SUMMARY<br>> PERSONNEL FILES<br>  MISSION LOGS";
 						break;
 					case 2:
-						theset = "  OPERATION SUMMARY<br>  PERSONNEL FILES<br>> MISSION LOGS";
+						theset = "&nbsp&nbspOPERATION SUMMARY<br>  PERSONNEL FILES<br>> MISSION LOGS";
 						break;
 				}
 				if(e.keyCode == 13)
@@ -176,7 +176,7 @@ window.onload = function(){
 						theset = "> ZACKRAI UTREVICH<br>  MAOKOVITCH ARGVETH";
 						break;
 					case 1:
-						theset = "  ZACKRAI UTREVICH<br>> MAOKOVITCH ARGVETH";
+						theset = "&nbsp&nbspZACKRAI UTREVICH<br>> MAOKOVITCH ARGVETH";
 						break;
 					default:
 						break;

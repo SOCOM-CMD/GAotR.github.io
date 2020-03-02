@@ -293,7 +293,6 @@ function classified()
 
 function SelectionPage()
 {
-	console.log("HOW AM I HERE");
 	screen = 1;
 	arrow = 0;
 	document.getElementById("passcode").innerHTML = "   ";
@@ -305,7 +304,7 @@ function SelectionPage()
 function loadScreen3() {
 	screen = 2;
 	arrow = 0;
-	
+	console.log("screen3");
 	document.getElementById("...").innerHTML = "> OPERATION SUMMARY<br>  PERSONNEL FILES<br>  MISSION LOGS";
 }
 

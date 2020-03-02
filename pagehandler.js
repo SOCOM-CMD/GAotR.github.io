@@ -3,7 +3,7 @@ var warningHandler = 0;
 var initialHandler = 0;
 var cont = false;
 var warningFinisher = 0;
-var warningTrue = true;
+var warningTrue = false;
 var classifiedpage = true;
 var arrow = 0;
 var screen = 0;
@@ -95,10 +95,10 @@ window.onload = function(){
 					switch(arrow)
 					{
 						case 0:
-							loadScreen3();
+							classified();
 							break;
 						case 1:
-							classified();
+							loadScreen3();
 							break;
 						case 2:
 							classified();

@@ -51,7 +51,7 @@ window.onload = function(){
 
 	function cursorBlip()
 	{
-		if(typing == true &&)
+		if(typing == true)
 			return;
 		if(screen1 == true)
 			return;

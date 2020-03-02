@@ -69,7 +69,7 @@ window.onload = function(){
 				if(arrow > 4)
 					arrow = 0;
 				if(arrow < 0)
-					arrow = 5;
+					arrow = 4;
 
 				var theset = document.getElementById("...").innerHTML;
 				
@@ -147,7 +147,7 @@ window.onload = function(){
 					switch(arrow)
 					{
 						case 0:
-							loadScreen4();
+							loadScreen11();
 							break;
 						case 1:
 							loadScreen7();
@@ -172,7 +172,7 @@ window.onload = function(){
 				if(arrow > 2)
 					arrow = 0;
 				if(arrow < 0)
-					arrow = 2;
+					arrow = 1;
 
 				var theset = document.getElementById("...").innerHTML;
 				
@@ -315,7 +315,7 @@ function loadScreen3() {
 }
 
 
-function loadScreen4() {
+function loadScreen7() {
 	screen = 3;
 	arrow = 0;
 	
@@ -339,7 +339,7 @@ function loadScreen6() {
 	
 }
 
-function loadScreen7() {
+function loadScreen11() {
 	screen = 6;
 	arrow = 0;
 	

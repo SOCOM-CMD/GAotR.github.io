@@ -140,6 +140,9 @@ window.onload = function(){
 					case 2:
 						theset = "&nbsp&nbspOPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>> MISSION LOGS";
 						break;
+					default:
+						document.getElementById("...").innerHTML = "> OPERATION SUMMARY<br>  PERSONNEL FILES<br>  MISSION LOGS";
+						break;
 				}
 				if(e.keyCode == 13)
 					switch(arrow)

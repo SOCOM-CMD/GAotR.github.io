@@ -30,6 +30,7 @@ window.onload = function(){
 			screen1 = false;
 			document.getElementById("blip").innerHTML = "   ";
 			document.getElementById("...").innerHTML = "ACCEPTED";
+			document.getElementById("passcode").innerHTML = "   ";
 			initiateStartup();
 			return;
 		}

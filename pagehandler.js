@@ -56,7 +56,7 @@ window.onload = function(){
 				document.getElementById("blip").innerHTML = amp;
 				if(amp == "")
 					typing = false;
-				if(screen == 0)
+				if(screen > 0)
 					document.getElementById("blip").innerHTML = "   ";
 				break;
 			case 1:

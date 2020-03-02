@@ -60,6 +60,8 @@ window.onload = function(){
 					document.getElementById("blip").innerHTML = "   ";
 				break;
 			case 1:
+				if(warningTrue == true)
+					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)

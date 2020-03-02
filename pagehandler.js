@@ -68,7 +68,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 4)
 					arrow = 0;
-				if(arrow < -1)
+				if(arrow < 1)
 					arrow = 5;
 
 				var theset = document.getElementById("...").innerHTML;
@@ -124,7 +124,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 2)
 					arrow = 0;
-				if(arrow < -1)
+				if(arrow < 1)
 					arrow = 2;
 
 				var theset = document.getElementById("...").innerHTML;
@@ -139,9 +139,6 @@ window.onload = function(){
 						break;
 					case 2:
 						theset = "&nbsp&nbspOPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>> MISSION LOGS";
-						break;
-					default:
-						document.getElementById("...").innerHTML = "> OPERATION SUMMARY<br>  PERSONNEL FILES<br>  MISSION LOGS";
 						break;
 				}
 				if(e.keyCode == 13)
@@ -170,7 +167,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 2)
 					arrow = 0;
-				if(arrow < -1)
+				if(arrow < 1)
 					arrow = 2;
 
 				var theset = document.getElementById("...").innerHTML;

@@ -286,7 +286,7 @@ function classified()
 	document.getElementById("...").innerHTML = "    ";
 	document.getElementById("passcode").innerHTML = "ACCESS DENIED";
 	window.setTimeout(() => {
-		startSelectionPage();
+		SelectionPage();
 	}, 2000);
 }
 

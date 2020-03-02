@@ -4,6 +4,7 @@ var initialHandler = 0;
 var cont = false;
 var warningFinisher = 0;
 var warningTrue = true;
+var classifiedpage = true;
 
 window.onload = function(){
 	var input = document.getElementById("text");
@@ -41,6 +42,7 @@ window.onload = function(){
 	};
 	
 	input.onkeyup = function (e) {
+		console.log(e.keyCode);
 		if(e.keyCode == 8) {
 			fin = fin.substring(0, fin.length - 1);
 			amp = amp.substring(0, amp.length - 1);
@@ -112,4 +114,23 @@ function warningText()
 			document.getElementById("...").innerHTML = temp;
 		}
 	}
+}
+
+function classified()
+{
+	document.getElementById("...").innerHTML = "    ";
+	document.getElementById("passcode").innerHTML = "ACCESS DENIED";
+	window.setTimeout(() => {
+		startSelectionPage();
+	}, 2000);
+}
+
+
+function startSelectionPage()
+{
+	document.getElementById("passcode").innerHTML = "   ";
+	document.getElementById("blip").innerHTML = "   ";
+	document.getElementById("...").innerHTML = "  [CLASSIFIED]<br>  Operation Undek<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+	
+	
 }

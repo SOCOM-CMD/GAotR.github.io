@@ -26,9 +26,10 @@ window.onload = function(){
 		console.log(fin);
 		if(fin == chk) {
 			screen1 = false;
-			document.getElementById("blip").innerHTML = "";
+			document.getElementById("blip").innerHTML = " ";
 			document.getElementById("...").innerHTML = "ACCEPTED";
 			initiateStartup();
+			return;
 		}
 		document.getElementById("blip").innerHTML = amp;
 		
@@ -53,7 +54,7 @@ window.onload = function(){
 	{
 		if(typing == true)
 			return;
-		if(screen1 == true)
+		if(screen1 == false)
 			return;
 		console.log(screen1);
 		if(blip == false) {

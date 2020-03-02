@@ -61,9 +61,9 @@ window.onload = function(){
 				break;
 			case 1:
 				if(e.keyCode == 38)
-					arrow++;
-				if(e.keyCode == 40)
 					arrow--;
+				if(e.keyCode == 40)
+					arrow++;
 				if(arrow > 4)
 					arrow = 0;
 				if(arrow < 0)
@@ -117,9 +117,9 @@ window.onload = function(){
 				break;
 			case 2:
 				if(e.keyCode == 38)
-					arrow++;
-				if(e.keyCode == 40)
 					arrow--;
+				if(e.keyCode == 40)
+					arrow++;
 				if(arrow > 2)
 					arrow = 0;
 				if(arrow < 0)
@@ -160,9 +160,9 @@ window.onload = function(){
 				break;
 			case 3:
 				if(e.keyCode == 38)
-					arrow++;
-				if(e.keyCode == 40)
 					arrow--;
+				if(e.keyCode == 40)
+					arrow++;
 				if(arrow > 2)
 					arrow = 0;
 				if(arrow < 0)
@@ -259,7 +259,7 @@ function warningText()
 	{
 		if(warningFinisher > 4) {
 				warningTrue = false;
-				startSelectionPage();
+				SelectionPage();
 				return;
 		}
 		warningHandler++;

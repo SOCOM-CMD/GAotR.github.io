@@ -93,7 +93,7 @@ window.onload = function(){
 					default:
 						break;
 				}
-				if(e.keyCode == 13)
+				if(e.keyCode == 13) {
 					switch(arrow)
 					{
 						case 0:
@@ -115,6 +115,8 @@ window.onload = function(){
 							classified();
 							break;
 					}
+					return;
+				}
 				document.getElementById("...").innerHTML = theset;
 				break;
 			case 2:
@@ -141,7 +143,7 @@ window.onload = function(){
 						theset = "&nbsp&nbspOPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>> MISSION LOGS";
 						break;
 				}
-				if(e.keyCode == 13)
+				if(e.keyCode == 13) {
 					switch(arrow)
 					{
 						case 0:
@@ -156,6 +158,8 @@ window.onload = function(){
 						default:
 							break;
 					}
+					return;
+				}
 				document.getElementById("...").innerHTML = theset;
 				if(e.keyCode == 27)
 					SelectionPage();
@@ -183,7 +187,7 @@ window.onload = function(){
 					default:
 						break;
 				}
-				if(e.keyCode == 13)
+				if(e.keyCode == 13) {
 					switch(arrow)
 					{
 						case 0:
@@ -193,6 +197,8 @@ window.onload = function(){
 							loadScreen6();
 							break;
 					}
+					return;
+				}
 				document.getElementById("...").innerHTML = theset;
 				if(e.keyCode == 27)
 					loadScreen3();

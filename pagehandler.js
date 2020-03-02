@@ -26,11 +26,12 @@ window.onload = function(){
 		console.log(fin);
 		if(fin == chk) {
 			screen1 = false;
-			document.getElementById("blip").innerHTML = " ";
+			document.getElementById("blip").innerHTML = "   ";
 			document.getElementById("...").innerHTML = "ACCEPTED";
 			initiateStartup();
 			return;
 		}
+		console.log("changing blip");
 		document.getElementById("blip").innerHTML = amp;
 		
 		//var key = e.keyCode || e.charCode;

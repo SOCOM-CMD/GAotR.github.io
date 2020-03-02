@@ -43,6 +43,8 @@ window.onload = function(){
 	};
 	
 	input.onkeyup = function (e) {
+		if(warningTrue == true)
+					return;
 		switch(screen)
 		{
 			case 0:

@@ -169,7 +169,7 @@ window.onload = function(){
 					arrow--;
 				if(e.keyCode == 40)
 					arrow++;
-				if(arrow > 2)
+				if(arrow > 1)
 					arrow = 0;
 				if(arrow < 0)
 					arrow = 1;

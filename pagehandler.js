@@ -74,19 +74,19 @@ window.onload = function(){
 				switch(arrow)
 				{
 					case 0:
-						theset =  "> [CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "> [CLASSIFIED]<br>&nbsp&nbspOPERATION UNDEK<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]";
 						break;
 					case 1:
-						theset =  "&nbsp&nbsp[CLASSIFIED]<br>> OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>> OPERATION UNDEK<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]";
 						break;
 					case 2:
-						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>> [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbspOPERATION UNDEK<br>> [CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]";
 						break;
 					case 3:
-						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>> [CLASSIFIED]<br>  [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbspOPERATION UNDEK<br>&nbsp&nbsp[CLASSIFIED]<br>> [CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]";
 						break;
 					case 4:
-						theset =  "&nbsp&nbsp[CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>> [CLASSIFIED]";
+						theset =  "&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbspOPERATION UNDEK<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]<br>> [CLASSIFIED]";
 						break;
 					default:
 						break;
@@ -130,13 +130,13 @@ window.onload = function(){
 				switch(arrow)
 				{
 					case 0:
-						theset = "> OPERATION SUMMARY<br>  PERSONNEL FILES<br>  MISSION LOGS";
+						theset = "> OPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>&nbsp&nbspMISSION LOGS";
 						break;
 					case 1:
 						theset = "&nbsp&nbspOPERATION SUMMARY<br>> PERSONNEL FILES<br>  MISSION LOGS";
 						break;
 					case 2:
-						theset = "&nbsp&nbspOPERATION SUMMARY<br>  PERSONNEL FILES<br>> MISSION LOGS";
+						theset = "&nbsp&nbspOPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>> MISSION LOGS";
 						break;
 				}
 				if(e.keyCode == 13)
@@ -259,7 +259,7 @@ function warningText()
 	{
 		if(warningFinisher > 4) {
 				warningTrue = false;
-				startSelectionPage();
+				SelectionPage();
 				return;
 		}
 		warningHandler++;

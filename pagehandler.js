@@ -93,10 +93,12 @@ function warningText()
 		cont = true;
 	if(cont == true)
 	{
+		if(warningFinisher > 4) {
+				warningTrue = false;
+				return;
+		}
 		warningHandler++;
 		if(warningHandler > 30) {
-			if(warningFinisher > 4)
-				warningTrue = false;
 			warningHandler = 0;
 			var temp = document.getElementById("...").innerHTML;
 			if(temp.length > 2) {

@@ -17,7 +17,6 @@ window.onload = function(){
 	var typing = false;
 	var blip = true;
 	var fin = "";
-	var screen1 = true;
 
 	input.onkeypress = function() {
 		if(screen > 0)
@@ -211,7 +210,8 @@ window.onload = function(){
 				break;
 			default:
 				break;
-	}
+		}
+	};
 	
 	window.setInterval(() => {
 		cursorBlip();

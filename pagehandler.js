@@ -2,6 +2,8 @@
 var warningHandler = 0;
 var initialHandler = 0;
 var cont = false;
+var warningFinisher = 0;
+var warningTrue = true;
 
 window.onload = function(){
 	var input = document.getElementById("text");
@@ -45,6 +47,8 @@ window.onload = function(){
 		document.getElementById("blip").innerHTML = amp;
 		if(amp == "")
 			typing = false;
+		if(screen1 == false)
+			document.getElementById("blip").innerHTML = "   ";
 	}
 	
 	window.setInterval(() => {
@@ -81,6 +85,8 @@ function initiateStartup()
 
 function warningText()
 {
+	if(warningTrue == false)
+		return;
 	if(cont == false)
 		initialHandler++;
 	if(initialHandler > 120)
@@ -89,11 +95,14 @@ function warningText()
 	{
 		warningHandler++;
 		if(warningHandler > 30) {
+			if(warningFinisher > 4)
+				warningTrue = false;
 			warningHandler = 0;
 			var temp = document.getElementById("...").innerHTML;
 			if(temp.length > 2) {
 				temp = "";
 				document.getElementById("...").innerHTML = temp;
+				warningFinisher++;
 				return;
 			}
 			temp += ".";

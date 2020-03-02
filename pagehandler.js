@@ -53,6 +53,7 @@ window.onload = function(){
 	{
 		if(typing == true && screen1 == true)
 			return;
+		console.log(screen1);
 		if(blip == false) {
 			document.getElementById("blip").innerHTML = " ";
 			blip = true;
@@ -70,8 +71,7 @@ function step() {
 
 function initiateStartup()
 {
-	console.log("here");
-	document.getElementById("inputcontainer").style.color = "white";
+	//document.getElementById("inputcontainer").style.color = "white";
 	window.requestAnimationFrame(step);
 }
 

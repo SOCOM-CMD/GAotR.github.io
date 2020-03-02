@@ -68,7 +68,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 4)
 					arrow = 0;
-				if(arrow < 1)
+				if(arrow < 0)
 					arrow = 5;
 
 				var theset = document.getElementById("...").innerHTML;
@@ -124,7 +124,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 2)
 					arrow = 0;
-				if(arrow < 1)
+				if(arrow < 0)
 					arrow = 2;
 
 				var theset = document.getElementById("...").innerHTML;
@@ -167,7 +167,7 @@ window.onload = function(){
 					arrow++;
 				if(arrow > 2)
 					arrow = 0;
-				if(arrow < 1)
+				if(arrow < 0)
 					arrow = 2;
 
 				var theset = document.getElementById("...").innerHTML;

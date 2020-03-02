@@ -3,7 +3,7 @@ var warningHandler = 0;
 var initialHandler = 0;
 var cont = false;
 var warningFinisher = 0;
-var warningTrue = false;
+var warningTrue = true;
 var classifiedpage = true;
 var arrow = 0;
 var screen = 0;
@@ -43,8 +43,6 @@ window.onload = function(){
 	};
 	
 	input.onkeyup = function (e) {
-		if(warningTrue == true)
-					return;
 		switch(screen)
 		{
 			case 0:
@@ -60,6 +58,8 @@ window.onload = function(){
 					document.getElementById("blip").innerHTML = "   ";
 				break;
 			case 1:
+				if(warningTrue == true)
+					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)
@@ -116,6 +116,8 @@ window.onload = function(){
 				document.getElementById("...").innerHTML = theset;
 				break;
 			case 2:
+				if(warningTrue == true)
+					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)
@@ -159,6 +161,8 @@ window.onload = function(){
 					SelectionPage();
 				break;
 			case 3:
+				if(warningTrue == true)
+					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)

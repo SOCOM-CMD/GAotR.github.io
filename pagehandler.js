@@ -133,7 +133,7 @@ window.onload = function(){
 						theset = "> OPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>&nbsp&nbspMISSION LOGS";
 						break;
 					case 1:
-						theset = "&nbsp&nbspOPERATION SUMMARY<br>> PERSONNEL FILES<br>  MISSION LOGS";
+						theset = "&nbsp&nbspOPERATION SUMMARY<br>> PERSONNEL FILES<br>&nbsp&nbspMISSION LOGS";
 						break;
 					case 2:
 						theset = "&nbsp&nbspOPERATION SUMMARY<br>&nbsp&nbspPERSONNEL FILES<br>> MISSION LOGS";
@@ -258,7 +258,6 @@ function warningText()
 	if(cont == true)
 	{
 		if(warningFinisher > 4) {
-				console.log("why am i here??");
 				warningTrue = false;
 				SelectionPage();
 				return;
@@ -292,6 +291,7 @@ function classified()
 
 function SelectionPage()
 {
+	console.log("HOW AM I HERE");
 	screen = 1;
 	arrow = 0;
 	document.getElementById("passcode").innerHTML = "   ";

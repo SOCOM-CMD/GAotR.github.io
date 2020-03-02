@@ -46,6 +46,8 @@ window.onload = function(){
 		switch(screen)
 		{
 			case 0:
+				if(warningTrue == false)
+					return;
 				console.log(e.keyCode);
 				if(e.keyCode == 8) {
 					fin = fin.substring(0, fin.length - 1);
@@ -58,8 +60,6 @@ window.onload = function(){
 					document.getElementById("blip").innerHTML = "   ";
 				break;
 			case 1:
-				if(warningTrue == true)
-					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)
@@ -95,10 +95,10 @@ window.onload = function(){
 					switch(arrow)
 					{
 						case 0:
-							classified();
+							loadScreen3();
 							break;
 						case 1:
-							loadScreen3();
+							classified();
 							break;
 						case 2:
 							classified();
@@ -116,8 +116,6 @@ window.onload = function(){
 				document.getElementById("...").innerHTML = theset;
 				break;
 			case 2:
-				if(warningTrue == true)
-					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)
@@ -161,8 +159,6 @@ window.onload = function(){
 					SelectionPage();
 				break;
 			case 3:
-				if(warningTrue == true)
-					return;
 				if(e.keyCode == 38)
 					arrow--;
 				if(e.keyCode == 40)
@@ -263,7 +259,7 @@ function warningText()
 	{
 		if(warningFinisher > 4) {
 				warningTrue = false;
-				SelectionPage();
+				startSelectionPage();
 				return;
 		}
 		warningHandler++;

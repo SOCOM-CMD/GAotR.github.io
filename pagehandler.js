@@ -258,6 +258,7 @@ function warningText()
 	if(cont == true)
 	{
 		if(warningFinisher > 4) {
+				console.log("why am i here??");
 				warningTrue = false;
 				SelectionPage();
 				return;

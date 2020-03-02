@@ -298,7 +298,7 @@ function SelectionPage()
 	arrow = 0;
 	document.getElementById("passcode").innerHTML = "   ";
 	document.getElementById("blip").innerHTML = "   ";
-	document.getElementById("...").innerHTML = "> [CLASSIFIED]<br>  OPERATION UNDEK<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]<br>  [CLASSIFIED]";
+	document.getElementById("...").innerHTML = "> [CLASSIFIED]<br>&nbsp&nbspOPERATION UNDEK<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]<br>&nbsp&nbsp[CLASSIFIED]";
 }
 
 

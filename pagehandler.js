@@ -97,10 +97,10 @@ window.onload = function(){
 					switch(arrow)
 					{
 						case 0:
-							loadScreen3();
+							classified();
 							break;
 						case 1:
-							classified();
+							loadScreen3();
 							break;
 						case 2:
 							classified();
